@@ -1,5 +1,6 @@
 <!doctype html>
 <script>const start = performance.now()</script>
-<script src="../echarts-5.4.3.min.js"></script>
-<script>document.write(performance.now() - start)</script>
+<script src="echarts-5.4.3.min.js"></script>
+<div id="root"></div>
+<script>root.innerHTML = performance.now() - start</script>
 <script>navigator.serviceWorker.register('sw.js')</script>
